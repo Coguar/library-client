@@ -1,0 +1,819 @@
+{
+  "id": "5217f5e5-5236-4719-b8c0-1ed17ff1993d",
+  "version": "2.0",
+  "name": "Dictionary",
+  "url": "http://localhost:9640/dictionary",
+  "tests": [{
+    "id": "56a36d69-4f59-4d1c-8a05-56dc135f108e",
+    "name": "Add_CheckEmptyInputs",
+    "commands": [{
+      "id": "fd6f954d-0c58-40e3-923f-ee4dd0102e90",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0cf9c6c-584c-49e8-9e71-45664e12a34b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d10fd5d-8932-460f-a396-cdf3f0141c24",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc5cd0a5-aab1-4500-a5a1-625c271a9b22",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "657926af-ecc0-4bbc-81e9-e1095bf04816",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a38cd8a-3aa5-44e9-afc1-b8a936c6c378",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[59]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2d95480d-78b5-4eb3-9f56-29a269f2ab25",
+    "name": "Add_WriteAndCheck",
+    "commands": [{
+      "id": "3472342e-110d-438f-9c13-0439186f63b3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04062e7c-e4a1-4dd7-9fd1-f3538dab5f4c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e548df95-2349-4c9b-9a5c-eec9941e861f",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47411fcf-dd05-4e9f-8e7c-1230408ba014",
+      "comment": "",
+      "command": "type",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "137124ed-8707-46bb-909c-3707514fb7bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=translate",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["css=#description", "css"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "633571f6-9042-4acb-a80b-2031c9db3403",
+      "comment": "",
+      "command": "type",
+      "target": "id=translate",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["css=#description", "css"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Desc"
+    }, {
+      "id": "08a54853-4f16-4c62-b4d8-29c5b864f428",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "971aa996-ad0f-46d4-9b4f-35cfb690f4ad",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=translate",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["css=#description", "css"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Desc"
+    }]
+  }, {
+    "id": "d4fa8abd-8d79-4041-af25-8cf0eee41e14",
+    "name": "Add_WriteAndResetInputs",
+    "commands": [{
+      "id": "56eb8db2-e490-4aa0-ac20-97e4bb9373b3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "191b2486-c6f3-47a8-b504-76b9c132d931",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dd087c5-1645-4a5f-8b32-7cebdb7924b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae1a7f79-2265-43ef-9d50-12e1a5dc1e53",
+      "comment": "",
+      "command": "type",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "f0ad39f7-9d93-4fbf-ba9b-0c7b511a20b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=translate",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["css=#description", "css"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c82efc87-9542-4c2c-bec6-269595b2139d",
+      "comment": "",
+      "command": "type",
+      "target": "id=translate",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["css=#description", "css"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "c39a32d7-8f4f-4641-8a8d-9bbd77f9fae4",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["css=#word", "css"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "26a13275-113a-403d-b696-107858596106",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=translate",
+      "targets": [
+        ["id=description", "id"],
+        ["css=#description", "css:finder"],
+        ["css=#description", "css"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Hello"
+    }, {
+      "id": "2a6882b1-0b69-4e41-b648-bfa3049b5778",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-warning > span",
+      "targets": [
+        ["css=.btn-warning > span", "css:finder"],
+        ["css=button.btn.btn-warning > span", "css"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[3]/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4639ba7-1b51-4fac-abff-7317f6c628c7",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=word",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "000a9727-4632-43c8-9948-45cab34ab6b0",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=translate",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bfbb8468-cf5f-4c93-bca4-b95e49f910b7",
+    "name": "Add_AddWord",
+    "commands": [{
+      "id": "6a4d86b6-d130-48c4-b19d-7e61fa4be1be",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d10be299-0da1-40eb-8e22-1f62ce0e2911",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38290e76-bcae-427c-a98c-b928f0b69e62",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[49]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9205809-96a9-45be-8b04-20c4fa07100a",
+      "comment": "",
+      "command": "type",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[49]", "xpath:innerText"]
+      ],
+      "value": "ForAdd"
+    }, {
+      "id": "f01d323c-323a-4ac4-8087-4881c3f68d36",
+      "comment": "",
+      "command": "click",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[53]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0628e64c-41dc-4c1e-96e3-ea1195b55038",
+      "comment": "",
+      "command": "type",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[53]", "xpath:innerText"]
+      ],
+      "value": "Translate"
+    }, {
+      "id": "f14ec987-ffd0-44f4-86f4-04bdb23670e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > span",
+      "targets": [
+        ["css=.btn-success > span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=(//*[contains(.,' Submit')])[14]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0e0584d-6785-45d7-bc7f-fd4773d3c3a0",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=word1",
+      "targets": [
+        ["linkText=word1", "linkText"],
+        ["css=.container > div:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'word1')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/id1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'word1')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f754ead2-6c10-421b-90e3-c8bc3e8fb3ce",
+    "name": "Add_NotFull",
+    "commands": [{
+      "id": "1581719d-773d-49ef-a3e6-8a8e38df411f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50d41f18-df4a-4379-b871-4bbc5fe683c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7df3d750-daef-4796-831f-d266bf88f012",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[49]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da40ddf2-c3fb-4cf7-91e5-bda69e3c6cb9",
+      "comment": "",
+      "command": "type",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[49]", "xpath:innerText"]
+      ],
+      "value": "OnlyWord"
+    }, {
+      "id": "901a7c07-0bd2-40ed-b72c-2caa0bf62683",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > span",
+      "targets": [
+        ["css=.btn-success > span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=(//*[contains(.,' Submit')])[14]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6c9f77b-35a8-4f93-ab39-7cd9a4d0c6c8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.text-danger",
+      "targets": [
+        ["css=.text-danger", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div", "xpath:position"],
+        ["xpath=(//*[contains(.,'Required')])[13]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32bc61db-0c90-4738-af77-4ec752a551c0",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[70]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03745f1c-9eb0-4f3a-9fcd-9f1f60b2ab65",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[65]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb5fb088-f450-40a7-9e85-b05a8e800875",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[65]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1bea3b7-6463-4957-be9f-6d2fdfd7035f",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[65]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3d5810e-5cfe-4145-a3ce-f8fed8d00a2b",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[65]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca2dca38-48a6-4fd6-9bf1-abc645da39f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[65]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b90d90d-1f6c-4aee-8f42-10ffa3da26e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[70]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9c179e0-da9c-4440-8370-98d7e2a0dd9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[70]", "xpath:innerText"]
+      ],
+      "value": "Only Translate"
+    }, {
+      "id": "c5b8c090-89d6-4fac-b4c2-bc4885ec4b23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=(//*[contains(.,' Submit')])[13]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "790382a3-dd18-4849-bcf9-e1558ddd69e1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.text-danger",
+      "targets": [
+        ["css=.text-danger", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"],
+        ["xpath=(//*[contains(.,'Required')])[13]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6a5434-3802-466b-87df-bae26fad45ae",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[74]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c4006204-6ff8-480d-a0b9-006ea59a58b9",
+    "name": "Word_GoToWord",
+    "commands": [{
+      "id": "1e26e644-0892-4631-93e0-cb00db4001f9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/dictionary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6e04d7e-5a98-42ee-af3e-af49ea1a8462",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "944c898f-e592-462f-b1e4-c3fd95ec8057",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//*[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b478e82f-7f1a-43cf-ad17-edf3131fe244",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=word1",
+      "targets": [
+        ["linkText=word1", "linkText"],
+        ["css=.container > div:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'word1')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/id1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'word1')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ae34f75-6fc4-4afb-a354-e15f85908a0d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container > div:nth-child(1)",
+      "targets": [
+        ["css=.container > div:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"],
+        ["xpath=(//*[contains(.,'word_getted')])[9]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2157e4cd-3360-47db-bf1f-526b774a083c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.container > div:nth-child(2)",
+      "targets": [
+        ["css=.container > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"],
+        ["xpath=(//*[contains(.,'desc_getted')])[9]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc2f2153-2889-4387-b295-c96bc956da1a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=(//*[contains(.,' Delete')])[9]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dfda2cc-b46d-4362-af11-7b8b6856c457",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.btn > span",
+      "targets": [
+        ["css=.btn > span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=(//*[contains(.,' Delete')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6a7e66ab-8c78-47cb-9f1c-c6a7be6329b9",
+    "name": "Word_Delete",
+    "commands": [{
+      "id": "b775cdd7-0626-4c5b-8e5f-9987e499c6c6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:9640/dictionary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8831bc0f-04c2-49df-a670-4efd62055bca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d585421-27e4-46c4-9464-54d32dd4518b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=word1",
+      "targets": [
+        ["linkText=word1", "linkText"],
+        ["css=.container > div:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'word1')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/id1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'word1')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93ea442b-db8a-4b66-8c08-0dd4451823df",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=(//*[contains(.,' Delete')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a28f4c6-aa7a-4c5d-9b68-5de2fb584c4a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=word2",
+      "targets": [
+        ["linkText=word2", "linkText"],
+        ["css=.container > div:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'word2')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/id2')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'word2')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "41ff75d4-af9b-47da-943f-ff84accf2f5f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["56a36d69-4f59-4d1c-8a05-56dc135f108e"]
+  }],
+  "urls": ["http://localhost:3000/add", "http://localhost:9640/add", "http://localhost:9640/dictionary"],
+  "plugins": []
+}

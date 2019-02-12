@@ -1,0 +1,212 @@
+{
+  "id": "39a7f47b-8ced-4e4f-9757-abdf9352853d",
+  "version": "2.0",
+  "name": "DictionaryWithBD",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "76573c8a-9716-477f-9c70-4f9d3491f8fc",
+    "name": "AddWord",
+    "commands": [{
+      "id": "aa9896d1-8355-4a59-9bc3-4447408c9b1e",
+      "comment": "",
+      "command": "open",
+      "target": "/dictionary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2e805be-a185-4aac-a758-803ab66371ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b791f93f-4219-4cd4-94b9-b5ac7672e141",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Добавить слово",
+      "targets": [
+        ["linkText=Добавить слово", "linkText"],
+        ["css=.sideBar___1TpzO > div:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Добавить слово')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/add')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'Добавить слово')])[8]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "032e2ecd-2e26-41c7-bb89-6a2dbe89711f",
+      "comment": "",
+      "command": "click",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[49]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b89fc237-d1e1-4fa7-bcde-136d4d5aea0e",
+      "comment": "",
+      "command": "type",
+      "target": "id=word",
+      "targets": [
+        ["id=word", "id"],
+        ["name=word", "name"],
+        ["css=#word", "css:finder"],
+        ["xpath=//input[@id='word']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[49]", "xpath:innerText"]
+      ],
+      "value": "ForTestForTest"
+    }, {
+      "id": "ea46b1a0-3312-49a9-8769-9a1679333182",
+      "comment": "",
+      "command": "click",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[53]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c6bcfc-18ed-469c-96bb-8aa7d98fd911",
+      "comment": "",
+      "command": "type",
+      "target": "id=translate",
+      "targets": [
+        ["id=translate", "id"],
+        ["name=translate", "name"],
+        ["css=#translate", "css:finder"],
+        ["xpath=//input[@id='translate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"],
+        ["xpath=(//*[contains(.,'')])[53]", "xpath:innerText"]
+      ],
+      "value": "ForTestForTestForTest"
+    }, {
+      "id": "3dd48df7-1855-4d2d-afae-5669a219036b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success > span",
+      "targets": [
+        ["css=.btn-success > span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/form/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=(//*[contains(.,' Submit')])[14]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c25a413-7613-4968-b2e9-e288af5cea3f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=ForTestForTest",
+      "targets": [
+        ["linkText=ForTestForTest", "linkText"],
+        ["css=.container > div:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ForTestForTest')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/5c62c6780244fb52dc5a4f48')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'ForTestForTest')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9efdd62c-51ef-4b5a-bd5d-5d6f7ad0591e",
+    "name": "DeleteWord",
+    "commands": [{
+      "id": "002ee0ed-5cdb-428c-8721-b47c237f1449",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bb20369-ed47-417e-9ae2-266dae5b9300",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "967011cb-7e07-425a-8673-5b5a1d4c4c54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Список слов",
+      "targets": [
+        ["linkText=Список слов", "linkText"],
+        ["css=div:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Список слов')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dictionary')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=(//*[contains(.,'Список слов')])[8]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c4c9d0d-d063-447f-bf32-a154c77f820c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ForTestForTest",
+      "targets": [
+        ["linkText=ForTestForTest", "linkText"],
+        ["css=.container > div:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ForTestForTest')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/5c62c6780244fb52dc5a4f48')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'ForTestForTest')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "470956f1-cb23-4bf7-be3b-7d5b38b162bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=(//*[contains(.,' Delete')])[10]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29240e2e-075f-455f-8f33-8a7df52fbb90",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "linkText=ForTestForTest",
+      "targets": [
+        ["linkText=AAA", "linkText"],
+        ["css=div:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'AAA')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/word/5c62c7ff0244fb52dc5a4f4f')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=(//*[contains(.,'AAA')])[12]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b72c153e-211f-434f-bafb-d2b57dda8430",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["76573c8a-9716-477f-9c70-4f9d3491f8fc"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
